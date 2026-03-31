@@ -73,7 +73,7 @@ SELECT * FROM books WHERE genre = 'fiction' ORDER BY year ASC;
 
 -- 17. Select all available books with a rating of 9.0 or higher,
 --     ordered by rating from highest to lowest.
-SELECT * FROM books WHERE rating available = TRUE AND >= 9.0 ORDER BY rating DESC; 
+SELECT * FROM books WHERE rating >= 9.0 AND available = TRUE ORDER BY rating DESC; 
 
 -- 18. Select the title and genre of the 3 oldest books.
 SELECT title, genre FROM books ORDER BY year ASC LIMIT 3;
